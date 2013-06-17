@@ -1,10 +1,10 @@
 package de.hugo.hugo_entdeckt.data;
 
-public class QestionQuess extends QuizQuestion {
+public class QestionGuess extends QuizQuestion {
 
 	protected int tolerance;
 
-	public QestionQuess(String question, int value, int tolerance) {
+	public QestionGuess(String question, int value, int tolerance) {
 		super(question, value);
 		this.tolerance = tolerance;
 	}
