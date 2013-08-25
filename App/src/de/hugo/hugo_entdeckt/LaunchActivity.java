@@ -1,5 +1,6 @@
 package de.hugo.hugo_entdeckt;
 
+import de.hugo.HugoBaseActivity;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
@@ -9,8 +10,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
-public class LaunchActivity extends Activity {
-	CharSequence text = "Hello toast!";
+public class LaunchActivity extends HugoBaseActivity {
+	private CharSequence text = "Hello toast!";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
