@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="de.hugo.hugo_entdeckt.LoginActivity"
+            android:label="Login" >
+        </activity>
+        <activity
+            android:name="de.hugo.hugo_entdeckt.HomeScreenActivity"
+            android:label="HomeScreen" >
+        </activity>
     </application>
 
 </manifest>

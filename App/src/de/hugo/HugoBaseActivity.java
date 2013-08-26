@@ -16,22 +16,26 @@ public class HugoBaseActivity extends Activity {
 	// -------------------------------------------
 
 	protected String DEBUG_TAG = "HUGO";
-	
-	protected boolean DEBUG_GENERAL = false;
+
+	// protected boolean DEBUG_GENERAL = false;
 	protected boolean DEBUG_LOGIN = true;
 
 	// -------------------------------------------
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
 		// DEBUG-Part
-		this.checkGeneralDebug();
+		// this.checkGeneralDebug();
 	}
 
-	protected void checkGeneralDebug() {
-		if (this.DEBUG_LOGIN == true) {
-			this.DEBUG_GENERAL = true;
-			return;
-		}
+	/**
+	 * Checkt ob ein debugwert true ist.
+	 * @return false, wenn kein debugwert true gesetzt ist.
+	 */
+	protected boolean checkGeneralDebug() {
+		if (this.DEBUG_LOGIN == true) return true;
+		// falls kein wert true ist.
+		return false;
 	}
 }
