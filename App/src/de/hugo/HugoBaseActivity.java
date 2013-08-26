@@ -19,22 +19,23 @@ public class HugoBaseActivity extends Activity {
 
 	// protected boolean DEBUG_GENERAL = false;
 	protected boolean DEBUG_LOGIN = true;
+	protected boolean DEBUG_VIDEO = true;
 
 	// -------------------------------------------
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// DEBUG-Part
-		// this.checkGeneralDebug();
 	}
 
 	/**
 	 * Checkt ob ein debugwert true ist.
+	 * 
 	 * @return false, wenn kein debugwert true gesetzt ist.
 	 */
 	protected boolean checkGeneralDebug() {
-		if (this.DEBUG_LOGIN == true) return true;
+		if (this.DEBUG_LOGIN) return true;
+		if (this.DEBUG_VIDEO) return true;
 		// falls kein wert true ist.
 		return false;
 	}
