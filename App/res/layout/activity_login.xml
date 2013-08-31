@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
 
     <EditText
         android:id="@+id/TextUsername"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text" />
 
     <EditText
         android:id="@+id/TextPassword"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/TextUsername"
         android:ems="10"
         android:inputType="textPassword" />
 
@@ -22,12 +26,17 @@
         android:id="@+id/LoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/TextPassword"
+        android:layout_toLeftOf="@+id/LoginCancel"
+        android:text="@string/login" />
 
     <Button
         android:id="@+id/LoginCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Abbrechen" />
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/TextPassword"
+        android:text="@string/abbrechen" />
 
-</LinearLayout>
+</RelativeLayout>

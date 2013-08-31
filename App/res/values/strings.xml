@@ -4,5 +4,7 @@
     <string name="app_name">Hugo-Entdeckt</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="login">Login</string>
+    <string name="abbrechen">Abbrechen</string>
 
 </resources>

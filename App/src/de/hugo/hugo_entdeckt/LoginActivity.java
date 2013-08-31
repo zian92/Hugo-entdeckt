@@ -10,6 +10,7 @@ import android.widget.Toast;
 import de.hugo.HugoBaseActivity;
 
 public class LoginActivity extends HugoBaseActivity {
+
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
