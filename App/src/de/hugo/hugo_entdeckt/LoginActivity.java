@@ -15,13 +15,19 @@ public class LoginActivity extends HugoBaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 		Log.i(this.DEBUG_TAG, "LoginActivity started");
-
+		
 		if (this.DEBUG_AUTOLOGIN) {
 			Log.w(DEBUG_TAG, "Auto-Login");
 			Intent intent = new Intent(LoginActivity.this, HomeScreenActivity.class);
 			LoginActivity.this.startActivity(intent);
 		}
 
+		// Button-Fonts
+		this.setButtonFontHappyMonkey(R.id.LoginButton);
+		this.setButtonFontHappyMonkey(R.id.LoginCancel);
+		this.setEditTextFontHappyMonkey(R.id.TextPassword);
+		this.setEditTextFontHappyMonkey(R.id.TextUsername);
+		
 		// Loginbutton
 		final Button LoginButton = (Button) findViewById(R.id.LoginButton);
 		LoginButton.setOnClickListener(new View.OnClickListener() {

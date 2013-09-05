@@ -16,8 +16,13 @@ public class HomeScreenActivity extends HugoBaseActivity {
 		setContentView(R.layout.activity_homescreen);
 		Log.i(this.DEBUG_TAG, "HomeScreen started");
 
+		// schreiftart
+		this.setTextViewFontHappyMonkey(R.id.infobox);
+
+		// news etc
 		this.changeInfoBoxText();
 
+		// Gridview
 		GridView gridview = (GridView) findViewById(R.id.gridview);
 		gridview.setAdapter(new ImageAdapter(this));
 
@@ -31,6 +36,6 @@ public class HomeScreenActivity extends HugoBaseActivity {
 
 	private void changeInfoBoxText() {
 		TextView InfoB = (TextView) findViewById(R.id.infobox);
-		InfoB.setText("05.09.13: " + this.NEWLINE_TEXTVIEW + "Hier werden in Zukunft news erscheinen!" + this.NEWLINE_TEXTVIEW + this.NEWLINE_TEXTVIEW + "06.09.13: " + this.NEWLINE_TEXTVIEW + "Man weis nie, was noch koommen wird.");
+		InfoB.setText("05.09.13: " + this.NEWLINE_TEXTVIEW + "Hier werden in Zukunft news erscheinen!" + this.NEWLINE_TEXTVIEW + this.NEWLINE_TEXTVIEW + "06.09.13: " + this.NEWLINE_TEXTVIEW + "Mann weis nie, was noch kommen wird.");
 	}
 }

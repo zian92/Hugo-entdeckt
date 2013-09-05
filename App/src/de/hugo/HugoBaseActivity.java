@@ -1,7 +1,11 @@
 package de.hugo;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 /**
  * 
@@ -31,7 +35,7 @@ public class HugoBaseActivity extends Activity {
 	// -------------------------------------------
 	// Spacer & Variables
 	// -------------------------------------------
-
+	protected final String FILEPATH_HAPPYMONKEY = "fonts/HappyMonkey-Regular.ttf";
 	protected final String NEWLINE_TEXTVIEW = "\n";
 
 	@Override
@@ -49,5 +53,41 @@ public class HugoBaseActivity extends Activity {
 		if (this.DEBUG_VIDEO) return true;
 		// falls kein wert true ist.
 		return false;
+	}
+
+	/**
+	 * Setzt die Schriftart des angegebenen Textfeldes zu <code>Happy Monkey</code>
+	 * 
+	 * @param androidID
+	 *            R.android.<code>id</code> des elementes, welches die schreiftart bekommen soll.
+	 */
+	protected void setTextViewFontHappyMonkey(int androidID) {
+		Typeface tf = Typeface.createFromAsset(getAssets(), this.FILEPATH_HAPPYMONKEY);
+		TextView tv = (TextView) findViewById(androidID);
+		tv.setTypeface(tf);
+	}
+
+	/**
+	 * Setzt die Schriftart des angegebenen Buttons zu <code>Happy Monkey</code>
+	 * 
+	 * @param androidID
+	 *            R.android.<code>id</code> des elementes, welches die schreiftart bekommen soll.
+	 */
+	protected void setButtonFontHappyMonkey(int androidID) {
+		Typeface tf = Typeface.createFromAsset(getAssets(), this.FILEPATH_HAPPYMONKEY);
+		Button button = (Button) findViewById(androidID);
+		button.setTypeface(tf);
+	}
+
+	/**
+	 * Setzt die Schriftart des angegebenen Editfeldes zu <code>Happy Monkey</code>
+	 * 
+	 * @param androidID
+	 *            R.android.<code>id</code> des elementes, welches die schreiftart bekommen soll.
+	 */
+	protected void setEditTextFontHappyMonkey(int androidID) {
+		Typeface tf = Typeface.createFromAsset(getAssets(), this.FILEPATH_HAPPYMONKEY);
+		EditText et = (EditText) findViewById(androidID);
+		et.setTypeface(tf);
 	}
 }
