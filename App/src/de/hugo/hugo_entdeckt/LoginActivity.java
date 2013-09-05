@@ -16,6 +16,12 @@ public class LoginActivity extends HugoBaseActivity {
 		setContentView(R.layout.activity_login);
 		Log.i(this.DEBUG_TAG, "LoginActivity started");
 
+		if (this.DEBUG_AUTOLOGIN) {
+			Log.w(DEBUG_TAG, "Auto-Login");
+			Intent intent = new Intent(LoginActivity.this, HomeScreenActivity.class);
+			LoginActivity.this.startActivity(intent);
+		}
+
 		// Loginbutton
 		final Button LoginButton = (Button) findViewById(R.id.LoginButton);
 		LoginButton.setOnClickListener(new View.OnClickListener() {

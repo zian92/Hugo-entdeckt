@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.util.Log;
 import android.content.Intent;
 
-public class LaunchActivity extends HugoBaseActivity {
+public class SplashScreenActivity extends HugoBaseActivity {
 	private boolean mIsBackButtonPressed;
 	private static final int SPLASH_DURATION = 3 * 1000; // seconds
 	private Handler myhandler;
@@ -14,7 +14,7 @@ public class LaunchActivity extends HugoBaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_launch);
+		setContentView(R.layout.activity_splash);
 		Log.i(DEBUG_TAG, "Launching!");
 
 		myhandler = new Handler();
@@ -25,8 +25,8 @@ public class LaunchActivity extends HugoBaseActivity {
 				finish();
 				if (!mIsBackButtonPressed) {
 					// start the home activity
-					Intent intent = new Intent(LaunchActivity.this, LoginActivity.class);
-					LaunchActivity.this.startActivity(intent);
+					Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+					SplashScreenActivity.this.startActivity(intent);
 				}
 			}
 		}, SPLASH_DURATION);
