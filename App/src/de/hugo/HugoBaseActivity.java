@@ -19,7 +19,7 @@ public class HugoBaseActivity extends Activity {
 
 	// protected boolean DEBUG_GENERAL = false;
 	protected boolean DEBUG_LOGIN = true;
-	protected boolean DEBUG_AUTOLOGIN = true;
+	protected boolean DEBUG_AUTOLOGIN = false;
 	protected boolean DEBUG_VIDEO = true;
 
 	// -------------------------------------------

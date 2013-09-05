@@ -14,7 +14,7 @@ public class SplashScreenActivity extends HugoBaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash);
-		Log.i(DEBUG_TAG, "Launching!");
+		Log.i(DEBUG_TAG, "Splash! \nLaunching!");
 
 		myhandler = new Handler();
 		// run a thread to start the home screen
