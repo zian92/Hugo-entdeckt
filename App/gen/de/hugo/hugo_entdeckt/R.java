@@ -40,7 +40,7 @@ public final class R {
         public static final int TextUsername=0x7f080002;
         public static final int action_settings=0x7f080006;
         public static final int gridview=0x7f080001;
-        public static final int textv=0x7f080000;
+        public static final int infobox=0x7f080000;
     }
     public static final class layout {
         public static final int activity_homescreen=0x7f030000;

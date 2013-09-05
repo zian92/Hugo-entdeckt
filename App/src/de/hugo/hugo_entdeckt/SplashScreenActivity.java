@@ -8,7 +8,6 @@ import android.content.Intent;
 
 public class SplashScreenActivity extends HugoBaseActivity {
 	private boolean mIsBackButtonPressed;
-	private static final int SPLASH_DURATION = 3 * 1000; // seconds
 	private Handler myhandler;
 
 	@Override
@@ -29,7 +28,7 @@ public class SplashScreenActivity extends HugoBaseActivity {
 					SplashScreenActivity.this.startActivity(intent);
 				}
 			}
-		}, SPLASH_DURATION);
+		}, (this.checkGeneralDebug()) ? 1000 : SPLASH_DURATION);
 	}
 
 }

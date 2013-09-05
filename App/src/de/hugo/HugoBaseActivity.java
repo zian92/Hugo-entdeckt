@@ -23,6 +23,16 @@ public class HugoBaseActivity extends Activity {
 	protected boolean DEBUG_VIDEO = true;
 
 	// -------------------------------------------
+	// EINSTELLUNGEN
+	// -------------------------------------------
+
+	protected static final int SPLASH_DURATION = 4 * 1000; // seconds
+
+	// -------------------------------------------
+	// Spacer & Variables
+	// -------------------------------------------
+
+	protected final String NEWLINE_TEXTVIEW = "\n";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
