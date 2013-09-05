@@ -13,7 +13,7 @@ public class LoginActivity extends HugoBaseActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_login);
+		setContentView(R.layout.layout_login);
 		Log.i(this.DEBUG_TAG, "LoginActivity started");
 		
 		if (this.DEBUG_AUTOLOGIN) {

@@ -13,7 +13,7 @@ public class SplashScreenActivity extends HugoBaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_splash);
+		setContentView(R.layout.layout_splash);
 		Log.i(DEBUG_TAG, "Splash! \nLaunching!");
 
 		myhandler = new Handler();
@@ -28,7 +28,7 @@ public class SplashScreenActivity extends HugoBaseActivity {
 					SplashScreenActivity.this.startActivity(intent);
 				}
 			}
-		}, (this.checkGeneralDebug()) ? 1000 : SPLASH_DURATION);
+		}, (this.checkGeneralDebug()) ? 500 : SPLASH_DURATION);
 	}
 
 }
