@@ -6,5 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="login">Login</string>
     <string name="abbrechen">Abbrechen</string>
+    <string name="HugoLogo">Hugo-Entdeckt Logo</string>
+    <string name="ImageDescription">Image</string>
 
 </resources>

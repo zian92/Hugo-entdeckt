@@ -10,6 +10,7 @@ package de.hugo.hugo_entdeckt.data;
 public class Question extends QuizQuestion {
 
 	protected Answer answers[] = new Answer[4];
+	protected int topicID = 0;
 
 	public Question(String question) {
 		super(question);

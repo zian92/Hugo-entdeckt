@@ -7,5 +7,23 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp" >
 
-    
+    <ImageView
+        android:id="@+id/quizcategory"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/ImageDescription"
+        android:src="@drawable/sample_0" />
+
+    <ImageView
+        android:id="@+id/quizheader"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/quizcategory"
+        android:contentDescription="@string/ImageDescription"
+        android:src="@drawable/hugo_entdeckt" />
+
 </RelativeLayout>
